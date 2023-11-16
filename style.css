@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  /* background-color: paleturquoise; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  padding: 0 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav i {
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.center-content {
+  width: 100%;
+  /* background-color: #333; */
+  padding: 0vw 8vw;
+  min-height: 55vh;
+}
+
+.center-content h1 {
+  font-size: 4.5vw;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.center-in {
+  /* background-color: red; */
+  height: 20vh;
+  padding: 2vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-in p {
+  font-size: 1.1vw;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.links {
+  width: 20%;
+  /* background-color: palegoldenrod; */
+}
+
+.elem {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elem a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.elem i {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity linear 0.5s;
+}
+
+.elem:hover i {
+  opacity: 1;
+}
+
+.elem:hover a {
+  text-decoration: underline;
+}
+
+.image-container {
+  width: 100%;
+  height: calc(100vh - 65vh);
+  background-image: url(https://images.unsplash.com/photo-1620206808765-c7382c951d4a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 0 35%;
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0 30px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+
+  .center-content {
+    margin-top: 3vw;
+    min-height: 55vh;
+  }
+  .center-content h1 {
+    font-size: 10vw;
+    padding: 2vw;
+  }
+
+  .center-in {
+    flex-direction: column;
+    padding: 0 3vw;
+  }
+
+  .center-in p {
+    font-size: 3vw;
+    padding: 20px 0;
+  }
+
+  .links {
+    width: 90%;
+  }
+
+  .elem {
+    padding: 10px 0;
+  }
+
+  .elem a {
+    font-size: 4vw;
+  }
+
+  .image-container {
+    height: calc(100vh - 60vh);
+    background-position: center;
+  }
+}
